@@ -17,7 +17,7 @@
   * MATHS 250
   * MATHS 260
 
-Feel free to check my social media profiles below and follow me:
+### Feel free to check my social media profiles below and follow me:
   * [Instagram](https://www.instagram.com/persona_krishanu/)
   * [Facebook](https://www.facebook.com/profile.php?id=100092529061433)
   * [Linkedin](https://www.linkedin.com/in/krishanu-bikram-choudhury-267914274/)
