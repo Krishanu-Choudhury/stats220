@@ -1,0 +1,97 @@
+---
+title: My dynamic report
+output: html_fragment
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
+
+```
+
+```{css}
+body {
+  font-size: 20px;
+  background-color: #FFFFFF;
+}
+p {
+  color: #333333;
+}
+h1, h2, h3 {
+  font-weight: bold;
+}
+```
+
+## My dynamic report is tracking regular transactions I observe, identifying the most frequent transaction methods, places, and times.
+
+```{r}
+# Reading data into R
+URL <- "https://docs.google.com/spreadsheets/d/e/2PACX-1vRZt32kU5Rgliiirpj4SxYxFhOmcQE1g1vJgZg8_deqjQLp1rDV0iheUa88-vODGOhoyToTxhGOtgqB/pub?gid=997753295&single=true&output=csv"
+logged_data <- read_csv(URL)
+
+# Renaming the variables
+latest_data <- logged_data %>%
+  rename(transaction_place = 2, transaction_amount = 3, transaction_method = 4, transaction_time = 5)
+```
+
+### Summary Values Output
+
+```{r}
+# Getting summary values
+max_transaction_observed = max(latest_data$transaction_amount) # max amount observed
+mean_transaction_amount = round(mean(latest_data$transaction_amount)) # mean of all transactions observed rounded to the nearest integer
+```
+
+The maximum amount of transaction that I have observed is `r max_transaction_observed` in NZ dollars.
+
+The mean of all the transactions that I have observed, rounded to the nearest integer is `r mean_transaction_amount` in NZ dollars.
+
+### Bar Charts
+
+#### What is the most common place of transaction?
+
+```{r}
+# Most Common Place of Transaction Observed
+place_common <- ggplot()+
+  geom_bar(aes(x = latest_data$transaction_place), fill = "orange") +
+  labs(title = "Most Common Places of Transaction", x = "Place", y = "Amount of Transactions Observed", caption = "Source: STATS 220 Project 2 Survey: Observing Transactions") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 7)) +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  theme(plot.caption = element_text(size = 7, hjust = 1)) +
+  scale_y_continuous(limits=c(0,20))
+place_common
+```
+
+Cafes and Restaurants tend to be the most common place of transactions as observed in my data.
+
+#### What payment methods do people prefer the most?
+
+```{r}
+# Most Common Payment Method Observed
+method_common <- ggplot()+
+  geom_bar(aes(x = latest_data$transaction_method), fill = "blue") +
+  labs(title = "Most Common Payment Methods", x = "Payment Method", y = "Amount of Transactions Observed", caption = "Source: STATS 220 Project 2 Survey: Observing Transactions") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 7)) +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  theme(plot.caption = element_text(size = 7, hjust = 1)) +
+  scale_y_continuous(limits=c(0,30))
+method_common
+```
+
+People generally prefer to use Card(Debit/Credit) for payments as observed in my data.
+
+#### When do most transactions occur?
+
+```{r}
+# Most Common Time of the Day when Transactions Take Place
+time_common <- ggplot()+
+  geom_bar(aes(x = latest_data$transaction_time), fill = "green") +
+  labs(title = "Most Common Time of The Day for Transactions", x = "Time of Day", y = "Amount of Transactions Observed", caption = "Source: STATS 220 Project 2 Survey: Observing Transactions") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 7)) +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  theme(plot.caption = element_text(size = 7, hjust = 1)) +
+  scale_y_continuous(limits=c(0,20))
+time_common
+```
+
+Most transactions happen during Afternoon as observed in my data.
