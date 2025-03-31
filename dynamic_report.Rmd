@@ -95,3 +95,5 @@ time_common
 ```
 
 **Conclusion**: Most transactions happen during Afternoon as observed in my data.
+
+                                                                            𝒯𝒽𝒶𝓃𝓀 𝒴𝑜𝓊 𝒻𝑜𝓇 𝓇𝑒𝒶𝒹𝒾𝓃𝑔 𝓂𝓎 𝓇𝑒𝓅𝑜𝓇𝓉!
