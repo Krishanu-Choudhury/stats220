@@ -62,7 +62,7 @@ place_common <- ggplot()+
 place_common
 ```
 
-**Conclusion**: Cafes and Restaurants tend to be the most common place of transactions as observed in my data.
+**Conclusion**: `r names(which.max(table(latest_data$transaction_place)))` tend to be the most common place of transactions as observed in my data.
 
 #### What payment methods do people prefer the most?
 
@@ -78,7 +78,7 @@ method_common <- ggplot()+
 method_common
 ```
 
-**Conclusion**: People generally prefer to use Card(Debit/Credit) for payments as observed in my data.
+**Conclusion**: People generally prefer to use `r names(which.max(table(latest_data$transaction_method)))` for payments as observed in my data.
 
 #### When do most transactions occur?
 
@@ -94,6 +94,10 @@ time_common <- ggplot()+
 time_common
 ```
 
-**Conclusion**: Most transactions happen during Afternoon as observed in my data.
+**Conclusion**: Most transactions happen during `r names(which.max(table(latest_data$transaction_time)))` as observed in my data.
 
-                                       𝒯𝒽𝒶𝓃𝓀 𝒴𝑜𝓊 𝒻𝑜𝓇 𝓇𝑒𝒶𝒹𝒾𝓃𝑔 𝓂𝓎 𝓇𝑒𝓅𝑜𝓇𝓉!
+
+
+                
+                
+                                𝒯𝒽𝒶𝓃𝓀 𝒴𝑜𝓊 𝒻𝑜𝓇 𝓇𝑒𝒶𝒹𝒾𝓃𝑔 𝓂𝓎 𝓇𝑒𝓅𝑜𝓇𝓉!
