@@ -26,7 +26,7 @@ To examine the number of liquor stores within 1 km of English-medium secondary s
 **Tools**:  
 - R (`tidyverse`, `ggplot2`, `dplyr`)
 
-📄 To see the report please visist my Project section of my [LinkedIn](https://www.linkedin.com/in/krishanu-bikram-choudhury-267914274/) profile.
+📄 To see the report please visit my Project section of my [LinkedIn](https://www.linkedin.com/in/krishanu-bikram-choudhury-267914274/) profile.
 
 ---
 
