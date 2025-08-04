@@ -1,6 +1,6 @@
 # 📊 Data Analysis Projects: Consumer Data & Liquor Stores and Schools
 
-This repository contains two data analysis projects using **R** as part of the course STATS 220 under University of Auckland, focusing on consumer shopping data trends and the total donations received by secondray English medium schools in the Auckland region, and whether this is affected by the presence of liquor stores within 1 km radius of them.
+This repository showcases two data analysis projects completed using R as part of the University of Auckland's STATS 220 course. The projects focus on trends in consumer shopping behavior and an investigation into whether the proximity of liquor stores (within 1 km) influences the total donations received by English-medium secondary schools in the Auckland region.
 
 ---
 
@@ -26,7 +26,7 @@ To examine the number of liquor stores within 1 km of English-medium secondary s
 **Tools**:  
 - R (`tidyverse`, `ggplot2`, `dplyr`)
 
-📄 To see the report please visist my [LinkedIn](https://www.linkedin.com/in/krishanu-bikram-choudhury-267914274/)
+📄 To see the report please visist my Project section of my [LinkedIn](https://www.linkedin.com/in/krishanu-bikram-choudhury-267914274/) profile.
 
 ---
 
