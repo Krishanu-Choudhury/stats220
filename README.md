@@ -12,8 +12,7 @@ To explore consumer demographic and behavioral patterns and generate insights fo
 **Tools**:  
 - R (`tidyverse`, `ggplot2`, `dplyr`)
 
-📄 **[View Full Report (PDF)](./visual_data_story.html)**  
-[![Consumer Data Analysis](./visual_data_story.html)]
+📄 View full report: [Visual Report](https://krishanu-choudhury.github.io/stats220/visual_data_story.html)
 
 ---
 
@@ -25,16 +24,14 @@ To examine the number of liquor stores within 1 km of English-medium secondary s
 - Differences in donations between single-sex and co-educational schools
 
 **Tools**:  
-- Python (`pandas`, `geopandas`, `matplotlib`, `seaborn`)
-- Geospatial analysis (buffer zones, geocoding)
+- R (`tidyverse`, `ggplot2`, `dplyr`)
 
-📄 **[View Full Report (PDF)](./Liquor_Schools_Analysis.pdf)**  
-[![Liquor Schools Analysis](./liquor_thumbnail.png)](./Liquor_Schools_Analysis.pdf)
+📄 To see the report please visist my [LinkedIn](https://www.linkedin.com/in/krishanu-bikram-choudhury-267914274/)
 
 ---
 
 ## 👥 Author
 
 **Krishanu Bikram Choudhury**  
-[LinkedIn](https://linkedin.com/in/your-link)  
-University of Auckland | Data Analyst in training
+[LinkedIn](https://www.linkedin.com/in/krishanu-bikram-choudhury-267914274/)  
+University of Auckland | Bachelor of Science - Mathematics & Statistics
