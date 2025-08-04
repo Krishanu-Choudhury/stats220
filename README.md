@@ -19,8 +19,8 @@ To explore consumer demographic and behavioral patterns and generate insights fo
 ## 🏫 2. Liquor Stores & Secondary Schools (Python)
 
 **Objective**:  
-To examine the number of liquor stores within 1 km of English-medium secondary schools in the Auckland Council area, and assess whether proximity is associated with:
-- Total donations received
+To examine the total donations received by English-medium secondary schools in the Auckland Council area, and assess whether this amount is associated with:
+- Liquor Stores Proximity (within 1 km radius of the schools)
 - Differences in donations between single-sex and co-educational schools
 
 **Tools**:  
