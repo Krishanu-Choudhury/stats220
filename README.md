@@ -7,7 +7,7 @@ This repository showcases two data analysis projects completed using R as part o
 ## 🧾 1. Consumer Data Analysis (R)
 
 **Objective**:  
-To explore consumer demographic and behavioral patterns and generate insights for targeted marketing strategies.
+To explore consumer demographic and behavioral patterns and generate insights for targeted marketing strategies such as the most common method of payments consumers prefer, amount spent at different places and most common transaction hours of the day.
 
 **Tools**:  
 - R (`tidyverse`, `ggplot2`, `dplyr`)
